@@ -9,4 +9,6 @@ router.post('/datos-curso',ArticleController.datosCurso);
 router.get('/test-de-controlador',ArticleController.test);
 //Rutas utiles
 router.post('/save',ArticleController.save)
+router.get('/articles/:last?',ArticleController.getArticles)
+router.get('/article/:id',ArticleController.getArticle)
 module.exports = router;

@@ -7,7 +7,7 @@ var ArticleSchema = Schema({
     title: String,
     content: String,
     date: { type: Date, default:Date.now},
-    Image: String
+    image: String
 });
 
 module.exports = mongoose.model('Article',ArticleSchema)
